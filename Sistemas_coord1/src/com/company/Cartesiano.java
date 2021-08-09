@@ -17,21 +17,6 @@ public class Cartesiano {
         return new Cartesiano(x,y);
     }
 
-    public Cartesiano polar_cartesiano(Polar p)
-    {
-       return new Cartesiano(x,y);
-    }
-    public Polar cartesiano_polar(float x, float y)
-    {
-        float radio=(float)Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
-        float angulo=(float)Math.atan(y/x);
-        return new Polar(x,y);
-    }
-
-    public Polar polar_cartesiano(Cartesiano c)
-    {
-        return new Polar();
-    }
     public float getX() {
         return x;
     }
