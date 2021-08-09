@@ -9,10 +9,12 @@ public class Polar {
         this.radio=radio;
         this.angulo=angulo;
     }
-
-    public Polar()
+    
+    public Polar cartesiano_polar(float x, float y)
     {
-
+        float radio=(float)Math.sqrt(Math.pow(x,2)+Math.pow(y,2));
+        float angulo=(float)Math.atan(y/x);
+        return new Polar(x,y);
     }
 
     public float getRadio() {
